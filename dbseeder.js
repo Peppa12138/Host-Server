@@ -6,7 +6,7 @@ const moment = require('moment');
 const connection = mysql.createConnection({
     host: 'localhost', // 数据库主机
     user: 'root', // 数据库用户名
-    password: 'admin123', // 数据库密码
+    password: '123456', // 数据库密码
     database: 'iot_db' // 数据库名
 });
 
