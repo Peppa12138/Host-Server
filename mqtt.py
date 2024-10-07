@@ -91,7 +91,7 @@ def publish_sensor_data():
         })
         client.publish(topic_sensor, payload)
         print(f"Published: {payload}")
-        time.sleep(1)
+        time.sleep(10)
 
 
 def on_message(client, userdata, msg):
@@ -119,7 +119,7 @@ def subscribe_control_signals():
     client.loop_start()  # 启动循环以接收消息
 
     while True:
-        time.sleep(1)  # 等待接收信号
+        time.sleep(10)  # 等待接收信号
 
 
 if __name__ == "__main__":
