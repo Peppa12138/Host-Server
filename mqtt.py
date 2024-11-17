@@ -33,6 +33,7 @@ def publish_sensor_data():
             "pressure": pressure,
             "depth": depth
         })
+        # print(f"Publishing sensor data: {payload}")
         client.publish(topic_sensor, payload)
         print(f"Published: {payload}")
         time.sleep(10)
