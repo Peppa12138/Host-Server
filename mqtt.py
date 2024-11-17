@@ -27,7 +27,7 @@ def publish_sensor_data():
         pressure = round(random.uniform(95.0, 105.0), 2)  # 气压范围 95-105 KPa
         depth = round(random.uniform(0.0, 10.0), 2)  # 深度范围 0-10 M
 
-        # 使用 JSON 格式发布传感器数据
+        # 使用 JSON 格式发布传感器数据，任务布置时给出的参考代码格式与实现时的格式不匹配，已修改为json格式
         payload = json.dumps({
             "temperature": temperature,
             "pressure": pressure,
